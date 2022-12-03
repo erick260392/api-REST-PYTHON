@@ -8,8 +8,11 @@ response = requests.get(ENDPOINT_POKEAPI)
 response = response.json()
 # print(response)
 
+
+
 abilities = response['abilities'][0]
 ability_name = abilities['ability'][ 'name']
+
 
 print(abilities)
 print(ability_name)
